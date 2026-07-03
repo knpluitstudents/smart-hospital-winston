@@ -149,14 +149,14 @@ with st.form("triage_form"):
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
             <span style="background:#25f20a;color:white;border-radius:8px;
                          padding:4px 10px;font-size:12px;font-weight:600;">2</span>
-            <span style="font-size:16px;font-weight:600;color:#105efa;">CODENO14</span>
+            <span style="font-size:16px;font-weight:600;color:#105efa;">How long have you had these symptons</span>
         </div>
     </div>
     """, unsafe_allow_html=True)
 
     col_cc, col_dur = st.columns(2)
     with col_cc:
-        chief_complaint = st.selectbox("CODENO15", options=list(cc_map.keys()))
+        chief_complaint = st.selectbox("", options=list(cc_map.keys()))
     with col_dur:
         duration = st.selectbox("CODENO16", options=list(dur_map.keys()), index=1)
 
